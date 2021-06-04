@@ -14,7 +14,7 @@ Males $L_{\infty}$ = `r round(model$MGparmAdj$L_at_Amax_Mal_GP_1[1], 1)` cm; $k$
 \end{centering}
 
 \vspace{0.5cm}
-
+	
 The length-at-age by sex and the coefficient of variation by size used in the model is shown in Figure \ref{fig:len-age-ss}.
 
 

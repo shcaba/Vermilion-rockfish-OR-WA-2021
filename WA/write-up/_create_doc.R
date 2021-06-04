@@ -6,10 +6,10 @@ library(sa4ss)
 library(r4ss)
 
 # Specify the directory for the document
-setwd("C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA 2021/OR/write_up")
+setwd("C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA 2021/WA/write-up")
 
 # Create the needed items to generate the "right" template that would be based on the inputs here:
- sa4ss::draft(authors = c("Jason M. Cope", "Alison D. Whitman"),
+ sa4ss::draft(authors = c("Jason M. Cope","Tien-Shui Tsou","Kristen Hinton","Corey Niles"),
    			 species = "Vermilion rockfish",
    			 latin = "Sebastes miniatus",
    			 coast = "US West - Oregon",

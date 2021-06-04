@@ -1,6 +1,6 @@
 ---
 geometry: margin=1in
-month: "May"
+month: "June"
 year: "2021"
 preamble: |
 output: sa4ss::techreport_pdf
@@ -8,6 +8,7 @@ bibliography: sa4ss.bib
 lang: en
 papersize: a4
 ---
+
 
 
 <!--chapter:end:00a.Rmd-->
@@ -71,7 +72,7 @@ _**These materials do not constitute a formal publication and are for informatio
 
 # Executive Summary{-}
 ## Stock{-}
-This assessment reports the status of Vermilion rockfish (_Sebastes miniatus_) off the US West - Oregon coast using data through xxxx.
+This assessment reports the status of vermilion rockfish (_Sebastes miniatus_) off the US West - Oregon coast using data through xxxx.
 
 ## Landings{-}
 Replace text.
@@ -120,7 +121,7 @@ Replace text.
 
 # Introduction
 ## Basic Information
-This assessment reports the status of Vermilion rockfish (_Sebastes miniatus_) off the US West - Oregon coast using data through xxxx.
+This assessment reports the status of vermilion rockfish (_Sebastes miniatus_) off the US West - Oregon coast using data through xxxx.
 
 ## Life History
 Replace text.
@@ -196,18 +197,18 @@ as well as variance associated with selecting a relatively small number (approxi
 
 ### Growth (Length-at-Age)
 
-The length-at-age was estimated for female and male Vermilion rockfish using data collected from fishery-independent data sources off the coast of California that were collected from 2004-2019 (Table \ref{tab:len-at-age-samps} and Figure \ref{fig:len-age-data}). Males are smaller than females, but much less susceptible to capture by hook and line, so the trawl fishery provided an important source of small individuals. Figure \ref{fig:len-age} shows the lengths and ages for all years by data source as well as predicted von Bertalanffy fits to the data. Females grow larger than males and sex-specific growth parameters were estimated at the following values:
+The length-at-age was estimated for female and male vermilion rockfish using data collected from fishery-independent data sources off the coast of California that were collected from 2004-2019 (Table \ref{tab:len-at-age-samps} and Figure \ref{fig:len-age-data}). Males are smaller than females, but much less susceptible to capture by hook and line, so the trawl fishery provided an important source of small individuals. Figure \ref{fig:len-age} shows the lengths and ages for all years by data source as well as predicted von Bertalanffy fits to the data. Females grow larger than males and sex-specific growth parameters were estimated at the following values:
 
 \begin{centering}
 
-Females $L_{\infty}$ = 26.7 cm; $k$ = 0.124; $t_0$ = -2.85
+Females $L_{\infty}$ = 57 cm; $k$ = 0.146; $t_0$ = -0.9
 
-Males $L_{\infty}$ = 20.8 cm; $k$ = 0.246; $t_0$ = -1.66
+Males $L_{\infty}$ = 54.1 cm; $k$ = 0.187; $t_0$ = 0.22
 
 \end{centering}
 
 \vspace{0.5cm}
-
+	
 The length-at-age by sex and the coefficient of variation by size used in the model is shown in Figure \ref{fig:len-age-ss}.
 
 
@@ -216,21 +217,21 @@ The length-at-age by sex and the coefficient of variation by size used in the mo
 
 ### Maturation and Fecundity
 
-Maturity-at-length based on the work of Love et al [-@love_life_1990] which estimated the 50 percent size-at-maturity of 14 cm off the coast of California, though the slope of the maturity curve was not estimated. Most rockfishes have slopes somewhere between -0.6 and -1 (though some go down to -0.25). In the absence of a literature value of -0.95 was assumed. A sensitivity run using -0.6 was also explored and showed essentially no change in results. Maturity was assumed to stay asymptotic for larger fish (Figure \ref{fig:maturity}). 
+Maturity-at-length based on the work of Love et al [-@love_life_1990] which estimated the 50 percent size-at-maturity of 39.4 cm off the coast of California, though the slope of the maturity curve was not estimated. Most rockfishes have slopes somewhere between -0.6 and -1 (though some go down to -0.25). In the absence of a literature value of -0.34 was assumed. A sensitivity run using -0.6 was also explored and showed essentially no change in results. Maturity was assumed to stay asymptotic for larger fish (Figure \ref{fig:maturity}). 
 
-The fecundity-at-length was based on research by Dick et al.[-@dick_meta-analysis_2017]. The fecundity relationship for Vermilion rockfish was estimated equal to $Fec$=4.32e-07$L$^3.55^ in millions of eggs where $L$ is length in cm. Fecundity-at-length is shown in Figure \ref{fig:fecundity}.
+The fecundity-at-length was based on research by Dick et al.[-@dick_meta-analysis_2017]. The fecundity relationship for vermilion rockfish was estimated equal to $Fec$=4.32e-07$L$^3.55^ in millions of eggs where $L$ is length in cm. Fecundity-at-length is shown in Figure \ref{fig:fecundity}.
 
 
 ### Natural Mortality
 
 Natural mortality was not directly measured, so life-history based empirical relationships were used. The Natural Mortality Tool (NMT; https://github.com/shcaba/Natural-Mortality-Tool), a Shiny-based graphical user interface allowing for the application of a variety of natural mortality estimators based on measures such as longevity, size, age and growth, and maturity, was used to obtain estimates of natural mortality. The NMT currently provides 19 options, including the Hamel [-@hamel_method_2015] method, which is a corrected form of the Then et al. [-@then_evaluating_2015-1] functional regression model and is a commomly applied method for west coast groundfish. The NMT also allows for the construction of a natural mortality prior weighted across methods by the user. 
 
- We assumed the age of 45 years to represent the practical longevity for both females and males based on 90% of the age of the oldest sampled individual (a 50 year old female; oldest male was 49), as was done in the 2015 yelloweye assessement [@gertseva_stock_2017]. Empirical $M$ estimators using the von Bertalanffy growth parameters were also considered (Figure \ref{fig:M_female}), but they produced unreasonably high estimates (2-3 times higher than the longevity estimates). This is likely explained by the fact that while Vermilion rockfish are a smaller rockfish species, they still have protracted longevity comparable to stocks that are twice their maximum size. Additionally, the FishLife [@thorson_predicting_2017] estimate was included, though, given the source of FishLife data is FishBase, there is a good chance the estimates of $M$ are also from methods using longevity, though the actual value of longevity used was unknown. The final composite $M$ distributionn (Figure \ref{fig:M_composite_dists}) are based on 4 empirical estimators, and result in a median value of 0.133 (mean of 0.136), with a CV of 0.22. We explore sensitivity to these assumptions of natural mortality through likelihood profiling.
+ We assumed the age of 45 years to represent the practical longevity for both females and males based on 90% of the age of the oldest sampled individual (a 50 year old female; oldest male was 49), as was done in the 2015 yelloweye assessement [@gertseva_stock_2017]. Empirical $M$ estimators using the von Bertalanffy growth parameters were also considered (Figure \ref{fig:M_female}), but they produced unreasonably high estimates (2-3 times higher than the longevity estimates). This is likely explained by the fact that while vermilion rockfish are a smaller rockfish species, they still have protracted longevity comparable to stocks that are twice their maximum size. Additionally, the FishLife [@thorson_predicting_2017] estimate was included, though, given the source of FishLife data is FishBase, there is a good chance the estimates of $M$ are also from methods using longevity, though the actual value of longevity used was unknown. The final composite $M$ distributionn (Figure \ref{fig:M_composite_dists}) are based on 4 empirical estimators, and result in a median value of 0.133 (mean of 0.136), with a CV of 0.22. We explore sensitivity to these assumptions of natural mortality through likelihood profiling.
 
 
 ### Length-Weight Relationship
 
-The length(cm)-weight(kg) relationship for Vermilion rockfish was estimated outside the model using all coastwide biological data available from fishery-independent data sources. The estimated length-weight relationship for female fish was $W$=1.08e-05$L$^3.09^ and males at $W$=1.17e-05$L$^3.04^ (Figures \ref{fig:len-weight}).
+The length(cm)-weight(kg) relationship for vermilion rockfish was estimated outside the model using all coastwide biological data available from fishery-independent data sources. The estimated length-weight relationship for female fish was $W$=2.60642e-05$L$^2.93^ and males at $W$=3.7636e-05$L$^2.83^ (Figures \ref{fig:len-weight}).
 
 
 ### Sex Ratio

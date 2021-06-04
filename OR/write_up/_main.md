@@ -1,7 +1,7 @@
 ---
 geometry: margin=1in
-month: "`r format(Sys.Date(), '%B')`"
-year: "`r format(Sys.Date(), '%Y')`"
+month: "June"
+year: "2021"
 preamble: |
 output: sa4ss::techreport_pdf
 bibliography: sa4ss.bib
@@ -9,29 +9,7 @@ lang: en
 papersize: a4
 ---
 
-```{r opts, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-knitr::knit_hooks$set(plot = function(x,options) {
-      base = knitr::opts_knit$get('base.url')
-      if (is.null(base)) base = ''
-      alt = ifelse (is.null(options$alt),"",options$alt)
-      cap = ifelse (is.null(options$caption),"",options$caption)
-      if (alt != ""){
-        sprintf('![%s](%s%s "%s")', cap, base, x, alt)
-      } else {
-        sprintf('![%s](%s%s)', cap, base, x)  
-        }
-  })
 
-load("00opts.Rdata")
-
-if(file.exists("00mod.Rdata")){
-  load("00mod.Rdata")
-} else {
-  print("Model output not being read. Please run the read_model() function.")
-}
-
-```
 
 <!--chapter:end:00a.Rmd-->
 
@@ -73,6 +51,12 @@ title: Status of Vermilion rockfish (_Sebastes miniatus_) along the US West - Or
 
 <!--chapter:end:00title.Rmd-->
 
+\vspace{500cm}
+
+# Disclaimer{-}
+
+_**These materials do not constitute a formal publication and are for information only. They are in a pre-review, pre-decisional state and should not be formally cited or reproduced. They are to be considered provisional and do not represent any determination or policy of NOAA or the Department of Commerce.**_
+
 \pagebreak
 \pagenumbering{roman}
 \setcounter{page}{1}
@@ -80,17 +64,15 @@ title: Status of Vermilion rockfish (_Sebastes miniatus_) along the US West - Or
 \renewcommand{\thetable}{\roman{table}}
 \renewcommand{\thefigure}{\roman{figure}}
 
+
+\setlength\parskip{0.5em plus 0.1em minus 0.2em}
+
 <!--chapter:end:01a.Rmd-->
 
-```{r executive, echo = FALSE}
-executive <- list()
-executive[["stock"]] <- paste0("This assessment reports the status of ",
-  spp, " (_", spp.sci, "_) off the ", coast, 
-  " coast using data through xxxx.")
-```
+
 # Executive Summary{-}
 ## Stock{-}
-`r executive[["stock"]]`
+This assessment reports the status of vermilion rockfish (_Sebastes miniatus_) off the US West - Oregon coast using data through xxxx.
 
 ## Landings{-}
 Replace text.
@@ -133,11 +115,13 @@ Replace text.
 \setcounter{table}{0}
 \setcounter{figure}{0}
 
+\setlength\parskip{0.5em plus 0.1em minus 0.2em}
+
 <!--chapter:end:10a.Rmd-->
 
 # Introduction
 ## Basic Information
-`r executive[["stock"]]`
+This assessment reports the status of vermilion rockfish (_Sebastes miniatus_) off the US West - Oregon coast using data through xxxx.
 
 ## Life History
 Replace text.
@@ -151,8 +135,6 @@ Replace text.
 ## Summary of Management History and Performance
 Replace text.
 
-## Foreign Fisheries
-Replace text.
 
 <!--chapter:end:11introduction.Rmd-->
 
@@ -176,29 +158,6 @@ Partial survey coverage of the US west coast occurred during the years 1988-1996
 Typically, only these four years that are seen as complete surveys are included in assessments.
 
 <!--chapter:end:21s-aslope.Rmd-->
-
-### \acrlong{s-ccfrp}
-
-Since 2007, the \Gls{s-ccfrp} has monitored several areas in California to evaluate the performance of \Gls{mpa}s
-and understand nearshore fish populations
-[@Wendt2009; @Starr2015].
-In 2017, the survey expanded beyond the four \Gls{mpa}s in central California
-(A&ntilde;o Nuevo, Point Lobos, Point Buchon, and Piedras Blancas)
-to include the entire California coast.
-Fish are collected by volunteer anglers aboard \Gls{cpfv}s guided by one of the following academic institutions based on proximity to fishing location:
-Humboldt State University;
-Bodega Marine Laboratories;
-Moss Landing Marine Laboratories;
-Cal Poly San Luis Obispo;
-University of California, Santa Barbara; and
-Scripps Institution of Oceanography.
-
-Surveys consist of fishing with hook-and-line gear for 30-45 minutes within randomly chosen 500 by 500 m grid cells within and outside \Gls{mpa}s.
-Prior to 2017, all fish were measured for length and release or descended to depth;
-since then, some were sampled for otoliths and fin clips.
-
-
-<!--chapter:end:21s-ccfrp.Rmd-->
 
 ### \acrlong{s-tri}
 
@@ -235,22 +194,55 @@ as well as variance associated with selecting a relatively small number (approxi
 
 ## Biological Data
 
-### Natural Mortality
+
+### Growth (Length-at-Age)
+
+The length-at-age was estimated for female and male vermilion rockfish using data collected from fishery-independent data sources off the coast of California that were collected from 2004-2019 (Table \ref{tab:len-at-age-samps} and Figure \ref{fig:len-age-data}). Males are smaller than females, but much less susceptible to capture by hook and line, so the trawl fishery provided an important source of small individuals. Figure \ref{fig:len-age} shows the lengths and ages for all years by data source as well as predicted von Bertalanffy fits to the data. Females grow larger than males and sex-specific growth parameters were estimated at the following values:
+
+\begin{centering}
+
+Females $L_{\infty}$ = 57 cm; $k$ = 0.146; $t_0$ = -0.9
+
+Males $L_{\infty}$ = 54.1 cm; $k$ = 0.187; $t_0$ = 0.22
+
+\end{centering}
+
+\vspace{0.5cm}
+	
+The length-at-age by sex and the coefficient of variation by size used in the model is shown in Figure \ref{fig:len-age-ss}.
+
+
+### Ageing Precision and Bias
 
 
 ### Maturation and Fecundity
 
+Maturity-at-length based on the work of Love et al [-@love_life_1990] which estimated the 50 percent size-at-maturity of 39.4 cm off the coast of California, though the slope of the maturity curve was not estimated. Most rockfishes have slopes somewhere between -0.6 and -1 (though some go down to -0.25). In the absence of a literature value of -0.34 was assumed. A sensitivity run using -0.6 was also explored and showed essentially no change in results. Maturity was assumed to stay asymptotic for larger fish (Figure \ref{fig:maturity}). 
 
-### Sex Ratio
+The fecundity-at-length was based on research by Dick et al.[-@dick_meta-analysis_2017]. The fecundity relationship for vermilion rockfish was estimated equal to $Fec$=4.32e-07$L$^3.55^ in millions of eggs where $L$ is length in cm. Fecundity-at-length is shown in Figure \ref{fig:fecundity}.
+
+
+### Natural Mortality
+
+Natural mortality was not directly measured, so life-history based empirical relationships were used. The Natural Mortality Tool (NMT; https://github.com/shcaba/Natural-Mortality-Tool), a Shiny-based graphical user interface allowing for the application of a variety of natural mortality estimators based on measures such as longevity, size, age and growth, and maturity, was used to obtain estimates of natural mortality. The NMT currently provides 19 options, including the Hamel [-@hamel_method_2015] method, which is a corrected form of the Then et al. [-@then_evaluating_2015-1] functional regression model and is a commomly applied method for west coast groundfish. The NMT also allows for the construction of a natural mortality prior weighted across methods by the user. 
+
+ We assumed the age of 45 years to represent the practical longevity for both females and males based on 90% of the age of the oldest sampled individual (a 50 year old female; oldest male was 49), as was done in the 2015 yelloweye assessement [@gertseva_stock_2017]. Empirical $M$ estimators using the von Bertalanffy growth parameters were also considered (Figure \ref{fig:M_female}), but they produced unreasonably high estimates (2-3 times higher than the longevity estimates). This is likely explained by the fact that while vermilion rockfish are a smaller rockfish species, they still have protracted longevity comparable to stocks that are twice their maximum size. Additionally, the FishLife [@thorson_predicting_2017] estimate was included, though, given the source of FishLife data is FishBase, there is a good chance the estimates of $M$ are also from methods using longevity, though the actual value of longevity used was unknown. The final composite $M$ distributionn (Figure \ref{fig:M_composite_dists}) are based on 4 empirical estimators, and result in a median value of 0.133 (mean of 0.136), with a CV of 0.22. We explore sensitivity to these assumptions of natural mortality through likelihood profiling.
 
 
 ### Length-Weight Relationship
 
+The length(cm)-weight(kg) relationship for vermilion rockfish was estimated outside the model using all coastwide biological data available from fishery-independent data sources. The estimated length-weight relationship for female fish was $W$=2.60642e-05$L$^2.93^ and males at $W$=3.7636e-05$L$^2.83^ (Figures \ref{fig:len-weight}).
 
-### Growth (Length-at-Age)
+
+### Sex Ratio
+
+No information on the sex ratio at birth was available so it was assumed to be 50:50. 
 
 
-### Ageing Precision and Bias
+### Steepness
+
+The Thorson-Dorn rockfish prior (developed for use West Coast rockfish assessments) conducted by James Thorson (personal communication, NWFSC, NOAA) and reviewed and endorsed by the Scientific and Statistical Committee (SSC) in 2017, has been a primary source of information on steepness for rockfishes. This approach, however, was subsequently rejected for future analysis in 2019 when the new meta-analysis resulted in a mean value of approximately 0.95. In the absense of a new method for generating a prior for steepness the default approach reverts to the previously endorsed method, the 2017 prior for steepness ($h$; beta distribution with $\mu$=0.72 and $\sigma$=0.15) is retained.  
+
 
 <!--chapter:end:22biology.Rmd-->
 
