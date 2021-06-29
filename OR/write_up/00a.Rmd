@@ -44,7 +44,7 @@ if(file.exists("00mod.Rdata")){
 
 #comm_fig_loc = "//nwcfile/FRAM/Assessments/CurrentAssessments/DataModerate_2021/Squarespot_Rockfish/data/catch_all/plots"
 
-#data_fig_loc = "//nwcfile/FRAM/Assessments/CurrentAssessments/DataModerate_2021/Squarespot_Rockfish/data/biology/plots"
+bio_fig_loc = "//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/biology_plots"
 
 #survey_loc = "//nwcfile/FRAM/Assessments/CurrentAssessments/DataModerate_2021/Squarespot_Rockfish/data/Trawl Survey Catch"
 

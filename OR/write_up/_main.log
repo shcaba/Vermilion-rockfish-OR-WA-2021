@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.5.17)  3 JUN 2021 12:41
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.5.17)  28 JUN 2021 22:59
  restricted system commands enabled.
 **_main.tex
 (./_main.tex
@@ -1529,7 +1529,8 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \BKM@id=\count380
-)) (./_main.aux)
+)) (./_main.aux (./tex_tables/Catches_All_Years.aux) (./tex_tables/age-error-mo
+dels.aux))
 \openout1 = _main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
@@ -2053,90 +2054,381 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1] [2]
 
 LaTeX Warning: Reference `tab:len-at-age-samps' on page 3 undefined on input li
-ne 553.
+ne 559.
 
+[3] [4]
 
-LaTeX Warning: Reference `fig:len-age-data' on page 3 undefined on input line 5
-53.
-
-
-LaTeX Warning: Reference `fig:len-age' on page 3 undefined on input line 553.
-
-
-LaTeX Warning: Reference `fig:len-age-ss' on page 3 undefined on input line 569
+LaTeX Warning: Reference `fig:len-weight' on page 5 undefined on input line 657
 .
 
+[5] [6] [7] [8] [9
 
-LaTeX Warning: Reference `fig:maturity' on page 3 undefined on input line 589.
-
-
-LaTeX Warning: Reference `fig:fecundity' on page 3 undefined on input line 595.
-
-
-[3]
-
-LaTeX Warning: Reference `fig:M_female' on page 4 undefined on input line 614.
-
-
-LaTeX Warning: Reference `fig:M_composite_dists' on page 4 undefined on input l
-ine 614.
-
-
-LaTeX Warning: Reference `fig:len-weight' on page 4 undefined on input line 627
-.
-
-[4] [5] [6] [7] [8
-
-] [9
+] [10
 
 ]
-<data-plot.png, id=576, 469.755pt x 361.35pt>
-File: data-plot.png Graphic file (type png)
-<use data-plot.png>
-Package luatex.def Info: data-plot.png  used on input line 941.
-(luatex.def)             Requested size: 398.34032pt x 306.41562pt.
+\openout2 = tex_tables/Catches_All_Years.aux
+ (./tex_tables/Catches_All_Years.tex [11
+
+] [12]) [13]
+\openout2 = tex_tables/age-error-models.aux
+ (./tex_tables/age-error-models.tex
+Overfull \hbox (12.37338pt too wide) in paragraph at lines 20--20
+ []|\TU/lmr/m/n/9 Pre- 
+ []
+
+
+Overfull \hbox (5.18509pt too wide) in paragraph at lines 20--20
+ \TU/lmr/m/n/9 ci- 
+ []
+
+
+Overfull \hbox (12.8189pt too wide) in paragraph at lines 20--20
+ \TU/lmr/m/n/9 sion| 
+ []
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 20.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 20.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 9.00082pt on input line 20.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00055pt on input line 20.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.99904pt on input line 20.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 20.
+
+Overfull \hbox (0.64589pt too wide) in paragraph at lines 20--20
+ []|$\TU/latinmodern-math.otf(1)/m/n/9 Δ$\TU/lmr/m/n/9 AICc| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 21--21
+ []|\TU/lmr/m/n/9 1| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 22--22
+ []|\TU/lmr/m/n/9 2| 
+ []
+
+
+Overfull \hbox (2.37599pt too wide) in paragraph at lines 23--23
+ []|\TU/lmr/bx/n/9 3| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 24--24
+ []|\TU/lmr/m/n/9 1| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 25--25
+ []|\TU/lmr/m/n/9 2| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 26--26
+ []|\TU/lmr/m/n/9 3| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 27--27
+ []|\TU/lmr/m/n/9 1| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 28--28
+ []|\TU/lmr/m/n/9 2| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 29--29
+ []|\TU/lmr/m/n/9 3| 
+ []
+
+
+Overfull \hbox (12.37338pt too wide) in paragraph at lines 45--45
+ []|\TU/lmr/m/n/9 Pre- 
+ []
+
+
+Overfull \hbox (5.18509pt too wide) in paragraph at lines 45--45
+ \TU/lmr/m/n/9 ci- 
+ []
+
+
+Overfull \hbox (12.8189pt too wide) in paragraph at lines 45--45
+ \TU/lmr/m/n/9 sion| 
+ []
+
+
+Overfull \hbox (0.64589pt too wide) in paragraph at lines 45--45
+ []|$\TU/latinmodern-math.otf(1)/m/n/9 Δ$\TU/lmr/m/n/9 AICc| 
+ []
+
+
+Overfull \hbox (2.37599pt too wide) in paragraph at lines 46--46
+ []|\TU/lmr/bx/n/9 1| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 47--47
+ []|\TU/lmr/m/n/9 2| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 48--48
+ []|\TU/lmr/m/n/9 3| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 49--49
+ []|\TU/lmr/m/n/9 1| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 50--50
+ []|\TU/lmr/m/n/9 2| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 51--51
+ []|\TU/lmr/m/n/9 3| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 52--52
+ []|\TU/lmr/m/n/9 1| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 53--53
+ []|\TU/lmr/m/n/9 2| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 54--54
+ []|\TU/lmr/m/n/9 3| 
+ []
+
+
+Overfull \hbox (12.37338pt too wide) in paragraph at lines 71--71
+ []|\TU/lmr/m/n/9 Pre- 
+ []
+
+
+Overfull \hbox (5.18509pt too wide) in paragraph at lines 71--71
+ \TU/lmr/m/n/9 ci- 
+ []
+
+
+Overfull \hbox (12.8189pt too wide) in paragraph at lines 71--71
+ \TU/lmr/m/n/9 sion| 
+ []
+
+
+Overfull \hbox (13.53445pt too wide) in paragraph at lines 71--71
+ []|\TU/lmr/m/n/9 AICc| 
+ []
+
+
+Overfull \hbox (0.64589pt too wide) in paragraph at lines 71--71
+ []|$\TU/latinmodern-math.otf(1)/m/n/9 Δ$\TU/lmr/m/n/9 AICc| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 72--72
+ []|\TU/lmr/m/n/9 1| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 73--73
+ []|\TU/lmr/m/n/9 2| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 74--74
+ []|\TU/lmr/m/n/9 3| 
+ []
+
+
+Overfull \hbox (2.37599pt too wide) in paragraph at lines 75--75
+ []|\TU/lmr/bx/n/9 1| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 76--76
+ []|\TU/lmr/m/n/9 2| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 77--77
+ []|\TU/lmr/m/n/9 3| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 78--78
+ []|\TU/lmr/m/n/9 1| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 79--79
+ []|\TU/lmr/m/n/9 2| 
+ []
+
+
+Overfull \hbox (1.68805pt too wide) in paragraph at lines 80--80
+ []|\TU/lmr/m/n/9 3| 
+ []
+
+[14
+
+
+
+
+
+] [15])
+<//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Referen
+ce model/plots/data_plot.png, id=668, 469.755pt x 469.755pt>
+File: //nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Re
+ference model/plots/data_plot.png Graphic file (type png)
+<use //nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Ref
+erence model/plots/data_plot.png>
+Package luatex.def Info: //nwcfile/FRAM/Assessments/CurrentAssessments/vermilio
+n_2021/OR/models/Reference model/plots/data_plot.png  used on input line 982.
+(luatex.def)             Requested size: 398.34032pt x 398.34032pt.
+<//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/biology_plots/
+AG_plot_lines_parameters.png, id=670, 963.6pt x 542.025pt>
+File: //nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/biology_p
+lots/AG_plot_lines_parameters.png Graphic file (type png)
+<use //nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/biology_pl
+ots/AG_plot_lines_parameters.png>
+Package luatex.def Info: //nwcfile/FRAM/Assessments/CurrentAssessments/vermilio
+n_2021/OR/biology_plots/AG_plot_lines_parameters.png  used on input line 992.
+(luatex.def)             Requested size: 398.328pt x 224.0595pt.
+<//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Referen
+ce model/plots/bio1_sizeatage.png, id=672, 469.755pt x 289.08pt>
+File: //nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Re
+ference model/plots/bio1_sizeatage.png Graphic file (type png)
+<use //nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Ref
+erence model/plots/bio1_sizeatage.png>
+Package luatex.def Info: //nwcfile/FRAM/Assessments/CurrentAssessments/vermilio
+n_2021/OR/models/Reference model/plots/bio1_sizeatage.png  used on input line 1
+002.
+(luatex.def)             Requested size: 398.34032pt x 245.13249pt.
+<//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/biology_plots/
+Age_error_plot.png, id=674, 648.92438pt x 405.01312pt>
+File: //nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/biology_p
+lots/Age_error_plot.png Graphic file (type png)
+<use //nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/biology_pl
+ots/Age_error_plot.png>
+Package luatex.def Info: //nwcfile/FRAM/Assessments/CurrentAssessments/vermilio
+n_2021/OR/biology_plots/Age_error_plot.png  used on input line 1012.
+(luatex.def)             Requested size: 398.34843pt x 248.62117pt.
+<//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Referen
+ce model/plots/bio6_maturity.png, id=676, 469.755pt x 289.08pt>
+File: //nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Re
+ference model/plots/bio6_maturity.png Graphic file (type png)
+<use //nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Ref
+erence model/plots/bio6_maturity.png>
+Package luatex.def Info: //nwcfile/FRAM/Assessments/CurrentAssessments/vermilio
+n_2021/OR/models/Reference model/plots/bio6_maturity.png  used on input line 10
+22.
+(luatex.def)             Requested size: 398.34032pt x 245.13249pt.
+<//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Referen
+ce model/plots/bio9_fecundity_len.png, id=678, 469.755pt x 289.08pt>
+File: //nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Re
+ference model/plots/bio9_fecundity_len.png Graphic file (type png)
+<use //nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Ref
+erence model/plots/bio9_fecundity_len.png>
+Package luatex.def Info: //nwcfile/FRAM/Assessments/CurrentAssessments/vermilio
+n_2021/OR/models/Reference model/plots/bio9_fecundity_len.png  used on input li
+ne 1032.
+(luatex.def)             Requested size: 398.34032pt x 245.13249pt.
+<//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/biology_plots/
+Mdensityplots_OR_vermilion.png, id=680, 803.0pt x 722.7pt>
+File: //nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/biology_p
+lots/Mdensityplots_OR_vermilion.png Graphic file (type png)
+<use //nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/biology_pl
+ots/Mdensityplots_OR_vermilion.png>
+Package luatex.def Info: //nwcfile/FRAM/Assessments/CurrentAssessments/vermilio
+n_2021/OR/biology_plots/Mdensityplots_OR_vermilion.png  used on input line 1042
+.
+(luatex.def)             Requested size: 398.35005pt x 358.51505pt.
 
 AED: lastpage setting LastPage
-[10
+[16
 
-<./data-plot.png>] (./_main.aux)
+
+
+
+<//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Referenc
+e Model/plots/data_plot.png>] [17<//nwcfile/FRAM/Assessments/CurrentAssessments/
+vermilion_2021/OR/biology_plots/AG_plot_lines_parameters.png><//nwcfile/FRAM/Ass
+essments/CurrentAssessments/vermilion_2021/OR/models/Reference Model/plots/bio1_
+sizeatage.png>] [18<//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021
+/OR/biology_plots/Age_error_plot.png><//nwcfile/FRAM/Assessments/CurrentAssessme
+nts/vermilion_2021/OR/models/Reference Model/plots/bio6_maturity.png>] [19<//nwc
+file/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Reference Mode
+l/plots/bio9_fecundity_len.png>] [20<//nwcfile/FRAM/Assessments/CurrentAssessmen
+ts/vermilion_2021/OR/biology_plots/Mdensityplots_OR_vermilion.png>] (./_main.au
+x (./tex_tables/Catches_All_Years.aux) (./tex_tables/age-error-models.aux))
 
 LaTeX Warning: There were undefined references.
 
-tagpdf: WARN! MC106 has no kids
-tagpdf: WARN! MC106 has no kids
-tagpdf: WARN! MC133 has no kids
-tagpdf: WARN! MC135 has no kids
-tagpdf: WARN! MC133 has no kids
-tagpdf: WARN! MC135 has no kids)
+tagpdf: WARN! MC125 has no kids
+tagpdf: WARN! MC125 has no kids
+tagpdf: WARN! MC141 has no kids
+tagpdf: WARN! MC141 has no kids
+tagpdf: WARN! MC144 has no kids
+tagpdf: WARN! MC144 has no kids
+tagpdf: WARN! MC151 has no kids
+tagpdf: WARN! MC151 has no kids
+tagpdf: WARN! MC154 has no kids
+tagpdf: WARN! MC156 has no kids
+tagpdf: WARN! MC154 has no kids
+tagpdf: WARN! MC156 has no kids
+tagpdf: WARN! MC166 has no kids
+tagpdf: WARN! MC166 has no kids
+tagpdf: WARN! MC174 has no kids
+tagpdf: WARN! MC174 has no kids
+tagpdf: WARN! MC182 has no kids
+tagpdf: WARN! MC182 has no kids
+tagpdf: WARN! MC248 has no kids
+tagpdf: WARN! MC248 has no kids)
 
 Here is how much of LuaTeX's memory you used:
- 49237 strings out of 478378
- 100000,1977958 words of node,token memory allocated
- 760 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 dir, 2 glue, 4 kern, 3 glyph, 34 attribute, 79 gl
-ue_spec, 15 attribute_list, 5 write, 1 close, 4 pdf_action nodes
-   avail lists: 1:36,2:3629,3:591,4:130,5:462,6:107,7:7526,8:70,9:534,10:15,11:4
-29,12:1
- 67288 multiletter control sequences out of 65536+600000
- 75 fonts using 15601391 bytes
- 115i,12n,146p,1737b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49608 strings out of 478378
+ 125006,1977958 words of node,token memory allocated
+ 790 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 dir, 2 glue, 4 kern, 3 glyph, 44 attribute, 79 gl
+ue_spec, 17 attribute_list, 5 write, 1 close, 5 pdf_action nodes
+   avail lists: 1:60,2:4526,3:1215,4:154,5:557,6:566,7:8455,8:84,9:3916,10:16,11
+:593,12:1
+ 67540 multiletter control sequences out of 65536+600000
+ 89 fonts using 19278791 bytes
+ 115i,12n,146p,4422b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/Users/Jason.Cope/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype/public/lm
--math/latinmodern-math.otf><c:/Users/Jason.Cope/AppData/Roaming/TinyTeX/texmf-di
-st/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/Users/Jason.Cope/AppDa
-ta/Roaming/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman10-bolditalic.otf>
-<c:/Users/Jason.Cope/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype/public/lm
-/lmroman10-bold.otf><c:/Users/Jason.Cope/AppData/Roaming/TinyTeX/texmf-dist/font
-s/opentype/public/lm/lmroman12-bold.otf><c:/Users/Jason.Cope/AppData/Roaming/Tin
-yTeX/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/Users/Jason.Co
-pe/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.
-otf><c:/Users/Jason.Cope/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype/publi
-c/lm/lmroman10-regular.otf><c:/Users/Jason.Cope/AppData/Roaming/TinyTeX/texmf-di
-st/fonts/opentype/public/lm/lmroman12-italic.otf><c:/Users/Jason.Cope/AppData/Ro
-aming/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf>
-Output written on _main.pdf (18 pages, 3307337 bytes).
+/lmroman9-bold.otf><c:/Users/Jason.Cope/AppData/Roaming/TinyTeX/texmf-dist/fonts
+/opentype/public/lm/lmroman9-regular.otf><c:/Users/Jason.Cope/AppData/Roaming/Ti
+nyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/Users/Ja
+son.Cope/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinm
+odern-math.otf><c:/Users/Jason.Cope/AppData/Roaming/TinyTeX/texmf-dist/fonts/ope
+ntype/public/lm/lmroman10-bolditalic.otf><c:/Users/Jason.Cope/AppData/Roaming/Ti
+nyTeX/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/Users/Jason.Cop
+e/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf
+><c:/Users/Jason.Cope/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype/public/l
+m/lmroman10-italic.otf><c:/Users/Jason.Cope/AppData/Roaming/TinyTeX/texmf-dist/f
+onts/opentype/public/lm/lmroman7-regular.otf><c:/Users/Jason.Cope/AppData/Roamin
+g/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/Users/Ja
+son.Cope/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman12-i
+talic.otf><c:/Users/Jason.Cope/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype
+/public/lm/lmroman12-regular.otf>
+Output written on _main.pdf (28 pages, 16099602 bytes).
 
-PDF statistics: 851 PDF objects out of 1000 (max. 8388607)
- 156 named destinations out of 1000 (max. 131072)
- 1899 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 992 PDF objects out of 1000 (max. 8388607)
+ 177 named destinations out of 1000 (max. 131072)
+ 2144 words of extra memory for PDF output out of 10000 (max. 100000000)
 

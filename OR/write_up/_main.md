@@ -124,7 +124,14 @@ Replace text.
 This assessment reports the status of vermilion rockfish (_Sebastes miniatus_) off the US West - Oregon coast using data through xxxx.
 
 ## Life History
-Replace text.
+Some descriptions of vermilion rockfish were observed prior to the separation of vermilion and sunset as a cryptic species pair by Hyde et al. in 2008 [-@Hyde2008]. Information pertaining solely to vermilion rockfish is used as much as possible. 
+
+Vermilion rockfish range from Prince William Sound, Alaska, to central Baja California at depths of 6 m to 436 m [@Love2002]. However, they are most commonly found from central Oregon to Punta Baja, Mexico [@Hyde2009] at depths of 50 m to 150 m [@Hyde2009].  Hyde and Vetter [-@Hyde2009] describe vermilion rockfish as residents of shallower depths (<100 m) than sunset rockfish. Adult fish tend to cluster on high relief rocky outcrops [@Love2002] and kelp forests [@Hyde2009]. North of Point Conception, some adults are shallower, living in caves and cracks [@Love2002]. Vermilion rockfish have shown high site fidelity [@Hannah2011 (only tagged 1 vermilion); @Lea1999], and low average larval dispersal distance [@Hyde2009]. Lowe et al. (2009) [Lowe2009] suggested vermilion rockfish to have a lower site fidelity than previously believed, but they acknowledged that their observations of movements to different depths may have been due to the reality of a shallower species and a deeper species. 
+Approximate lifespan for vermilion rockfish is 60 years, with females living longer and growing larger than their male counterparts. 50% are mature at 5 years and about 37 cm, with males probably maturing at shorter lengths than females [@Love2002].
+Vermilion rockfish are viviparous, and release 63,000 to 2,600,000 eggs per season. In southern California, vermilion rockfish larvae are released between July and March. In central and northern California, this release occurs in September, December, and April-June [@Love2002].  Larval release in fall and winter is not common among other rockfish species. Hyde and Vetter [-@Hyde2009] suggest that low larval dispersal may be due to weak poleward flow of nearshore waters corresponding with peak vermilion larval release. 
+Young-of-the-year vermilion rockfish settle out of the plankton during two recruitment periods per year, first from February to April and a second from August to October, and settlement has been observed in May off southern California [@Love2002]. Larvae measure about 4.3 mm. Both young-of-the-year vermilion and sunset rockfish are mottled brown with areas of black, and older juveniles turn a mottled orange or red color [@Love2012]. 
+Juvenile fish are found individually from 6 m to 36 m, living near sand and structures. After two months, juveniles travel deeper and live on low relief rocky outcrops and other structures [@Love2002].
+Adult vermilion rockfish predominantly eat smaller fish, though sometimes they pursue euphausiids and other various macroplankton [@Phillips1964]. Love [-@Love2002] noted their diet to include octopus, salps, shrimps, and pelagic red crabs. 
 
 ## Ecosystem Considerations
 Replace text.
@@ -192,41 +199,47 @@ as well as variance associated with selecting a relatively small number (approxi
 
 <!--chapter:end:21s-wcgbts.Rmd-->
 
-## Biological Data
-
+## Biological Parameters
 
 ### Growth (Length-at-Age)
 
-The length-at-age was estimated for female and male vermilion rockfish using data collected from fishery-independent data sources off the coast of California that were collected from 2004-2019 (Table \ref{tab:len-at-age-samps} and Figure \ref{fig:len-age-data}). Males are smaller than females, but much less susceptible to capture by hook and line, so the trawl fishery provided an important source of small individuals. Figure \ref{fig:len-age} shows the lengths and ages for all years by data source as well as predicted von Bertalanffy fits to the data. Females grow larger than males and sex-specific growth parameters were estimated at the following values:
+The length-at-age was estimated for female and male vermilion rockfish using data from collections sampling the commerical and recreational fisheries off the coast of Oregon from years 2004-2020 (Table \ref{tab:len-at-age-samps}. Figure \ref{fig:len-age-data} shows the lengths and ages for all years by sex and data source as well as predicted von Bertalanffy growth function (VBGF) fits to the data. Females grow larger than males and sex-specific growth parameters were estimated at the following values:
 
 \begin{centering}
 
-Females $L_{\infty}$ = 57 cm; $k$ = 0.146; $t_0$ = -0.9
+Females $L_{\infty}$ = 57.2 cm; $k$ = 0.146; $t_0$ = -0.65
 
-Males $L_{\infty}$ = 54.1 cm; $k$ = 0.187; $t_0$ = 0.22
+Males $L_{\infty}$ = 54.2 cm; $k$ = 0.18; $t_0$ = 0
 
 \end{centering}
 
 \vspace{0.5cm}
-	
-The length-at-age by sex and the coefficient of variation by size used in the model is shown in Figure \ref{fig:len-age-ss}.
+
+The estimated VBGF parameters provided initial values for the estimation of growth in the model, as all age and length data are included in the model. The resultant growth curves estimated by the model are presented in Figure \ref{fig:len-age-ss}. Sensitivity to the treatment of growth parameters (fixed or estimated) are explored through sensitivity analyses.
 
 
 ### Ageing Precision and Bias
+Counting ages from ageing structures in long-lived temparate fishes is challenging. Ages derived from these structures can be hard to reproduce within and between readers (i.e., imprecision), and may not contain the true age (i.e., bias). Stock assessment outputs can be affected by bias and imprecision in ageing, thus it is important to quantify and integrate this source of variability when fitting age data in assessments. In Stock Synthesis, this is done by including ageing error matrices that include the mean age (row 1) and standard deviation in age (row 2). Ageing bias is implemented When the inputted mean age deviates from the expected middle age for any given age bin (e.g., 1.75 inputted versus 1.5 being the true age); ageing imprecision is given as the standard deviation for each age bin (row 2).
 
+Ageing error matrices for commerical and recreational fisheries respectively were calculated using multiple reads within each reader (n = 181 for commercial; n = 237  for recreational). An additional ageing error matrix was constructed from the Committee of Age Reading Experts (CARE) otolith exchange, where an exchange of 43 individuals was done amonth ODFW, WDFW, SWFSC, and NWFSC. The ODFW internal reads were used in the reference model, with the CARE comparison explored in a sensitivity model run.
 
-### Maturation and Fecundity
+Estimation of ageing error matrices for each lab used the approach of Punt et al. (2008). The ageing error matrix offers a way to calculate both bias and imprecision in age reads. Reader 1, the primary reader of the ages used in the stock assessment, is always considered unbiased, but may be imprecise. Several model configurations are available for exploration based on either the functional form (e.g., constant CV, curvilinear standard deviation, or curvilinear CV) of the bias in reader 2 or in the precision of the readers. Model selection uses AIC corrected for small sample size (AICc), which converges to AIC when sample sizes are large. Bayesian Information Criterion (BIC) was also considered when selecting a final model.
 
-Maturity-at-length based on the work of Love et al [-@love_life_1990] which estimated the 50 percent size-at-maturity of 39.4 cm off the coast of California, though the slope of the maturity curve was not estimated. Most rockfishes have slopes somewhere between -0.6 and -1 (though some go down to -0.25). In the absence of a literature value of -0.34 was assumed. A sensitivity run using -0.6 was also explored and showed essentially no change in results. Maturity was assumed to stay asymptotic for larger fish (Figure \ref{fig:maturity}). 
-
-The fecundity-at-length was based on research by Dick et al.[-@dick_meta-analysis_2017]. The fecundity relationship for vermilion rockfish was estimated equal to $Fec$=4.32e-07$L$^3.55^ in millions of eggs where $L$ is length in cm. Fecundity-at-length is shown in Figure \ref{fig:fecundity}.
+The ODFW interlab comparison supported imprecision with a curvilinear standard deviation for the recretaional fishery, and a linear one for commercial. The CARE comparison was also linear, with a bit higher standard deviation (Table \ref{tab:age-error-models). The functional forms for each matrix are given in Figure \ref{fig:age-error}.
 
 
 ### Natural Mortality
 
-Natural mortality was not directly measured, so life-history based empirical relationships were used. The Natural Mortality Tool (NMT; https://github.com/shcaba/Natural-Mortality-Tool), a Shiny-based graphical user interface allowing for the application of a variety of natural mortality estimators based on measures such as longevity, size, age and growth, and maturity, was used to obtain estimates of natural mortality. The NMT currently provides 19 options, including the Hamel [-@hamel_method_2015] method, which is a corrected form of the Then et al. [-@then_evaluating_2015-1] functional regression model and is a commomly applied method for west coast groundfish. The NMT also allows for the construction of a natural mortality prior weighted across methods by the user. 
+Natural mortality was not directly measured, so life-history based empirical relationships were used. The Natural Mortality Tool (NMT; https://github.com/shcaba/Natural-Mortality-Tool), a Shiny-based graphical user interface allowing for the application of a variety of natural mortality estimators based on measures such as longevity, size, age and growth, and maturity, was used to obtain estimates of natural mortality. The NMT currently provides 22 options, including the Hamel [-@hamel_method_2015] method, which is a corrected form of the Then et al. [-@then_evaluating_2015-1] functional regression model and is a commonly applied method for west coast groundfish. The NMT also allows for the construction of a natural mortality prior weighted across methods by the user. 
 
- We assumed the age of 45 years to represent the practical longevity for both females and males based on 90% of the age of the oldest sampled individual (a 50 year old female; oldest male was 49), as was done in the 2015 yelloweye assessement [@gertseva_stock_2017]. Empirical $M$ estimators using the von Bertalanffy growth parameters were also considered (Figure \ref{fig:M_female}), but they produced unreasonably high estimates (2-3 times higher than the longevity estimates). This is likely explained by the fact that while vermilion rockfish are a smaller rockfish species, they still have protracted longevity comparable to stocks that are twice their maximum size. Additionally, the FishLife [@thorson_predicting_2017] estimate was included, though, given the source of FishLife data is FishBase, there is a good chance the estimates of $M$ are also from methods using longevity, though the actual value of longevity used was unknown. The final composite $M$ distributionn (Figure \ref{fig:M_composite_dists}) are based on 4 empirical estimators, and result in a median value of 0.133 (mean of 0.136), with a CV of 0.22. We explore sensitivity to these assumptions of natural mortality through likelihood profiling.
+We assumed the age of 54 years to represent the practical longevity (i.e., 90% of the commonly seen maximum age of 60) for both females and males, though the absolute oldest age in OR was >60 years. In the larger biomass, higher sampled area of California, ages 80+ were even encountered. Empirical $M$ estimators using the von Bertalanffy growth parameters were also considered, but they produced unreasonably high estimates (2-3 times higher than the longevity estimates). This is likely explained by the fact that while vermilion rockfish have protracted longevity at $L_{\infty}$. Additionally, the FishLife [@thorson_predicting_2017] estimate was included, though, given the source of FishLife data is FishBase, there is a good chance the estimates of $M$ are also from methods using longevity, though the actual source of longevity in FishLife was unknown. The final composite $M$ distributionn (Figure \ref{fig:M_composite_dists}) are based on 4 empirical estimators, and result in a median value of 0.1. We assume a lognormal distribution with a standard deviation of 0.438 (@hamel_method_2015) for the purposes of the prior used to estimate $M$. This creates a wide prior to allow the data in the model to also influence the final estimated value of $M$.We also explore sensitivity to these assumptions of natural mortality through likelihood profiling.
+
+
+### Maturation and Fecundity
+
+Maturity-at-length is based on the work of Hannah and Kautzi [-@hannah_age_2012] which estimated the 50 percent size-at-maturity of 39.4 cm off Oregon, though the slope of the maturity curve was not provided. Looking at the data provided in the reference, and length at 95% maturity was assumed at 48cm, resulting in a slope of -0.34. Maturity was assumed to stay asymptotic for larger fish (Figure \ref{fig:maturity}) as no functional maturity estimate was availale [@head_fxnalmatspline_2020]. 
+
+The fecundity-at-length was based on research by Dick et al.[-@dick_meta-analysis_2017]. The fecundity relationship for vermilion rockfish was estimated equal to $Fec$=4.32e-07$L$^3.55^ in millions of eggs where $L$ is length in cm. Fecundity-at-length is shown in Figure \ref{fig:fecundity}.
 
 
 ### Length-Weight Relationship
@@ -242,7 +255,6 @@ No information on the sex ratio at birth was available so it was assumed to be 5
 ### Steepness
 
 The Thorson-Dorn rockfish prior (developed for use West Coast rockfish assessments) conducted by James Thorson (personal communication, NWFSC, NOAA) and reviewed and endorsed by the Scientific and Statistical Committee (SSC) in 2017, has been a primary source of information on steepness for rockfishes. This approach, however, was subsequently rejected for future analysis in 2019 when the new meta-analysis resulted in a mean value of approximately 0.95. In the absense of a new method for generating a prior for steepness the default approach reverts to the previously endorsed method, the 2017 prior for steepness ($h$; beta distribution with $\mu$=0.72 and $\sigma$=0.15) is retained.  
-
 
 <!--chapter:end:22biology.Rmd-->
 
@@ -355,13 +367,53 @@ Here are all the mad props!
 \clearpage
 # Tables
 
+<!-- ======================================================= -->
+<!-- ***************    Catches      *********************** --> 
+<!-- ======================================================= -->
+
+\include{tex_tables/Catches_All_Years.tex}
+
+\newpage
+
+\include{tex_tables/age-error-models.tex}
+
+\newpage
 
 <!--chapter:end:52tables.Rmd-->
 
 \clearpage
 # Figures
 
-![Summary of data sources used in the base model.\label{fig:data-plot}](data-plot.png){width=100% height=100% alt="Summary of data sources used in the base model"}
+
+<!-- ====================================================================== --> 
+<!-- ******************* Data Used in the Model *************************** --> 
+<!-- ====================================================================== --> 
+
+
+![Summary of data sources used in the base model.\label{fig:data-plot}](//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Reference model/plots/data_plot.png){width=100% height=100% alt="Summary of data sources used in the base model."}
+
+
+<!-- ====================================================================== -->
+<!-- *************************     Biology     **************************** --> 
+<!-- ====================================================================== -->
+
+
+![Observed length-at-age by data source and sex. Lines indicate fits to the von Bertalanffy growth equation, with parameter estimates provided in the bottom right corner of the figure.\label{fig:len-age-data}](//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/biology_plots/AG_plot_lines_parameters.png){width=100% height=100% alt="Observed length-at-age by data source and sex. Lines indicate fits to the von Bertalanffy growth equation, with parameter estimates provided in the bottom right corner of the figure."}
+
+
+![Length at age in the beginning of the year in the ending year of the model.\label{fig:len-age-ss}](//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Reference model/plots/bio1_sizeatage.png){width=100% height=100% alt="Length at age in the beginning of the year in the ending year of the model."}
+
+
+![Agein error matrix (age by standard deviation) values by source. The commercial and recreational matrices are based on inter-reader comparisons.\label{fig:age-error}](//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/biology_plots/Age_error_plot.png){width=100% height=100% alt="Agein error matrix (age by standard deviation) values by source. The commercial and recreational matrices are based on inter-reader comparisons."}
+
+
+![Maturity as a function of  length.\label{fig:maturity}](//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Reference model/plots/bio6_maturity.png){width=100% height=100% alt="Maturity as a function of  length."}
+
+
+![Fecundity as a function of length.\label{fig:fecundity}](//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models/Reference model/plots/bio9_fecundity_len.png){width=100% height=100% alt="Fecundity as a function of length."}
+
+
+![Composite natural mortality distriubtion for $S. hopkinsi$ using four longevity estimators each with a SD = 0.2 presuming a lognomral error distibution.\label{fig:M_composite_dists}](//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/biology_plots/Mdensityplots_OR_vermilion.png){width=100% height=100% alt="Composite natural mortality distriubtion for $S. hopkinsi$ using four longevity estimators each with a SD = 0.2 presuming a lognomral error distibution."}
 
 <!--chapter:end:53figures.Rmd-->
 

@@ -27,7 +27,7 @@ setwd("C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA 2021/WA/wri
 
 base_name = "Reference model"
 mod_loc = file.path(
-  "//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/OR/models",
+  "//nwcfile/FRAM/Assessments/CurrentAssessments/vermilion_2021/WA/models",
   base_name)
 
 sa4ss::read_model(

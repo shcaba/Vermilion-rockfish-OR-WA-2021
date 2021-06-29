@@ -1,3 +1,14 @@
 \clearpage
 # Tables
 
+<!-- ======================================================= -->
+<!-- ***************    Catches      *********************** --> 
+<!-- ======================================================= -->
+
+\include{tex_tables/Catches_All_Years.tex}
+
+\newpage
+
+\include{tex_tables/age-error-models.tex}
+
+\newpage
